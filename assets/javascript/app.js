@@ -41,6 +41,21 @@ $(document).ready(function () {});
         dateAdded: firebase.database.ServerValue.TIMESTAMP
       });
 
+      //add the new data to the table on the page
+      var newRow = $("<newRow>");
+  
+      var trainRow = $("<tr>");
+      var EndRow = $("</tr>")
+      
+      var tn = $("<th scope='row'>").text(trainName);
+      var td = $("<td>").text(destination);
+      var tt = $("<td>").text(firstTrainTime);
+      var tf = $("<td>").text(frequency);
+      var na = $("<td>").text(nextArrival);
+   
+      $(".table").append(trainRow, tn, td, tf, na, EndRow );
+
+
     });
 
     // Firebase watcher 
@@ -61,3 +76,14 @@ $(document).ready(function () {});
     }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
     });
+
+
+    
+
+
+//     <tr>
+//     <th scope="row">3</th>
+//     <td>Larry</td>
+//     <td>the Bird</td>
+//     <td>@twitter</td>
+//   </tr>
