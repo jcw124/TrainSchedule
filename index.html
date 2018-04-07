@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Train Schedule</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bevan|Bungee+Inline|Oleo+Script+Swash+Caps|Titan+One" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Train Schedule</h1>
+              <p class="lead">Some text to be completeld later.</p>
+            </div>
+          </div>
+    </header>
+    <body>
+        <div class="container">
+                <div class="class row">
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency(min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Train 1</th>
+                                    <td>Seattle</td>
+                                    <td>25 min</td>
+                                    <td>2:35pm</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                </div>
+                <div class="class row">
+                    <div class="class column 12">
+                        <form>
+                                <div class="form-group">
+                                  <label for="trainName">Train Name</label>
+                                  <input type="trainName" class="form-control" id="trainName" placeholder="Enter Train Name Here">
+                                  <small id="trainName" class="form-text text-muted">train </small>
+                                </div>
+                                <div>
+                                <label for="destination-input">Destination</label>
+                                <input type="destination" class="form-control" id="destination" placeholder="Enter destination">
+                                <small id="destination" class="form-text text-muted">Tell us where you would like to go.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="trainTime-input">First Train Time (HH:mm - military time)</label>
+                                  <input type="trainTime" class="form-control" id="trainTime" placeholder="trainTime">
+                                </div>
+                                <div class="form-group">
+                                        <label for="frequency-input">Frequency (min)</label>
+                                        <input type="frequency" class="form-control" id="frequency" placeholder="frequency">
+                                </div>
+                                <button id="add-train"  type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                    </div>          
+                </div>
+        </div>
+
+    </body>
+<footer>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="assets/javascript/app.js"></script>
+</footer>
+
+
+</html>
