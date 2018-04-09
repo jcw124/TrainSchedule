@@ -5,3 +5,14 @@
     font-size: 100px;
     background-color: blueviolet;
 }
+#form{
+    padding: 25px;
+   background-color: aqua;
+}
+#inputs{
+    text-align: center;
+    float: right;
+}
+.table{
+    padding-bottom: 150px;
+}
